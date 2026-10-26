@@ -8,7 +8,7 @@ Evidence-first pre-transaction legal-risk lookup for identifiable crypto assets.
 
 ## MVP status
 
-This repository currently contains the project overview. The static MVP files (HTML, CSS, JavaScript, sample data, source notes, and roadmap) should be committed here before GitHub is treated as the canonical source of the deployed application.
+This repository contains the static, dependency-light MVP: searchable registry, Legal Receipt view, explicit verification states, source link, and browser-side SHA-256 calculation for a user-selected document. GitHub should become the canonical source for future changes after it has been compared with the deployed Netlify version.
 
 The current Netlify demo contains a seed record based on a secondary docket mirror. Its source validation, current docket status, exact asset scope, and legal effect require independent confirmation before the status may be upgraded.
 
