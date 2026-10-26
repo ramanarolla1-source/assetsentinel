@@ -1,0 +1,37 @@
+[
+  {
+    "id": "sdny-usdt-2026-08010",
+    "title": "USD Tether (USDT) holdings — TBJT9BP7cM5yY…",
+    "asset": "USD Tether (USDT)",
+    "address": "TBJT9BP7cM5yYne9kTdf2HNu9mX1WpRQpt",
+    "chain": "Not independently confirmed in this record",
+    "court": "United States District Court, Southern District of New York",
+    "caseNumber": "1:2026cv08010",
+    "indexedOrderDate": "2026-10-21",
+    "sourceState": "Independent validation pending",
+    "sourceStatus": "Source validation pending",
+    "reportType": "Secondary docket mirror discovery lead",
+    "summary": "Publicly indexed order text reports that the court granted the government's motion for a restraining order preserving property. The primary order, exact address scope, subsequent docket entries, and current legal effect require independent validation.",
+    "sourceUrl": "https://docs.justia.com/cases/federal/district-courts/new-york/nysdce/1:2026cv08010/672731/20",
+    "sourceKind": "Secondary docket mirror",
+    "verification": {
+      "sourceAndCase": "Independent validation pending",
+      "assetLinkage": "Requires primary-document review",
+      "legalEffect": "Not assessed; current effect unconfirmed",
+      "currentStatus": "Not confirmed from subsequent official docket entries"
+    },
+    "cautions": [
+      "This is a discovery lead, not a final determination of liability.",
+      "The source has not been independently validated against the official docket and primary documents.",
+      "Do not infer that the order remains in force without checking later docket entries.",
+      "Do not infer that every address or holding mentioned in the proceeding is within the order's scope."
+    ],
+    "history": [
+      {
+        "date": "2026-10-21",
+        "event": "Order text indexed by secondary docket mirror",
+        "status": "Not independently validated"
+      }
+    ]
+  }
+]
