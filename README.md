@@ -54,3 +54,7 @@ The prototype is for demonstration and research. It is not legal advice, does no
 ## License
 
 Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE).
+
+## Deployment workflow
+
+This site is deployed from the `main` branch through Netlify Git integration. For the current static MVP, keep the build command empty and publish the repository root (`.`). Changes committed to `main` should trigger a Netlify production deployment when automatic builds are active.
