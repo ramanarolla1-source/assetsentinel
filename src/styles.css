@@ -91,3 +91,10 @@ footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1
   .principles { gap: 20px; }
   footer { flex-direction: column; }
 }
+
+/* Improved visibility for interactive feedback and source links. */
+.search-status { color: var(--muted); font-size: 12px; min-height: 18px; margin: 10px 0 0; }
+.source-action { display: inline-flex; align-items: center; padding: 10px 13px; border: 1px solid #b7d8d4; border-radius: 8px; background: #f1faf9; color: #075b56; font-weight: 700; text-decoration: none; }
+.source-action:hover { background: #e2f4f2; text-decoration: underline; }
+.hash-result p { margin: 8px 0; }
+.hash-value { display: block; margin-top: 6px; padding: 12px; border-radius: 8px; background: #f6f8fa; overflow-wrap: anywhere; user-select: all; }
