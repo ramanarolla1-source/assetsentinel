@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evidence-first legal intelligence for on-chain assets.">
+  <title>AssetSentinel — Legal Intelligence for On-Chain Assets</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="AssetSentinel home">
+      <span class="brand-mark">A</span>
+      <span><strong>AssetSentinel</strong><small>LEGAL INTELLIGENCE FOR ON-CHAIN ASSETS</small></span>
+    </a>
+    <span class="top-pill">MVP · Evidence-first demo</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">PRE-TRANSACTION LEGAL-RISK LOOKUP</p>
+      <h1>Know what the record says<br><span>before you transact.</span></h1>
+      <p class="hero-copy">Search recorded legal-risk information associated with an identifiable crypto asset. Inspect its source, verification state, and Legal Receipt—not just a risk score.</p>
+      <form id="search-form" class="search-bar" role="search">
+        <label class="visually-hidden" for="search-input">Search token, wallet address, or case number</label>
+        <span aria-hidden="true">⌕</span>
+        <input id="search-input" type="search" placeholder="Search token, wallet address, case number…" autocomplete="off">
+        <button type="submit">Search records</button>
+      </form>
+      <p class="quiet-note">A missing record is not proof that an asset is legally clear.</p>
+    </section>
+
+    <section class="registry-section" aria-labelledby="registry-heading">
+      <div class="section-heading">
+        <div><p class="eyebrow">REGISTRY</p><h2 id="registry-heading">Asset status records</h2></div>
+        <span class="count-pill" id="record-count">Loading records…</span>
+      </div>
+      <div id="registry" class="registry-grid" aria-live="polite">
+        <p class="loading">Loading the registry…</p>
+      </div>
+    </section>
+
+    <section class="principles" aria-label="Product principles">
+      <article><span class="principle-number">01</span><h3>Source provenance</h3><p>See where information came from and what has—and has not—been verified.</p></article>
+      <article><span class="principle-number">02</span><h3>Asset linkage</h3><p>Keep the connection between the identified asset and the legal proceeding explicit.</p></article>
+      <article><span class="principle-number">03</span><h3>Traceable history</h3><p>Changes should create a record, not silently erase what was previously reported.</p></article>
+    </section>
+
+    <section id="receipt-panel" class="receipt-panel hidden" aria-labelledby="receipt-title">
+      <div class="receipt-top"><div><p class="eyebrow">LEGAL RECEIPT</p><h2 id="receipt-title">Record details</h2></div><button id="close-receipt" class="button-secondary" type="button">Close</button></div>
+      <div id="receipt-content"></div>
+    </section>
+
+    <section id="hash-panel" class="hash-panel" aria-labelledby="hash-title">
+      <p class="eyebrow">DOCUMENT INTEGRITY CHECK</p>
+      <h2 id="hash-title">Verify a document's SHA-256 hash</h2>
+      <p>Select a local file to calculate its SHA-256 hash in your browser. The file is not uploaded by this tool.</p>
+      <div class="hash-controls"><label class="file-picker" for="document-file">Choose file</label><input id="document-file" type="file"><button id="hash-button" type="button">Calculate hash</button></div>
+      <div id="hash-result" class="hash-result" aria-live="polite"></div>
+      <p class="disclaimer">A hash can establish a match against a known reference. It does not establish who issued a document, whether it is authentic, or its legal effect.</p>
+    </section>
+  </main>
+
+  <footer><span>AssetSentinel · MVP prototype</span><span>Not legal advice · No transaction blocking · No claim of complete coverage</span></footer>
+  <script src="src/app.js" defer></script>
+</body>
+</html>
